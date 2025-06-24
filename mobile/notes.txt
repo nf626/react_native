@@ -1,0 +1,17 @@
+_layout:
+
+In Expo Router, the leading underscore in _layout.tsx (or _layout.jsx) indicates that this file defines a navigation layout for the routes within its directory. This convention is a core part of Expo Router's file-based routing system and serves several key purposes:
+
+Defining Shared UI and Persistence:
+The _layout.tsx file allows you to define common UI elements, such as headers, tab bars, or navigation drawers, that should persist across multiple routes within that specific directory. This means you can create a consistent look and feel for a section of your application without having to repeat the UI code in every individual screen file.
+
+Encapsulating Navigation Logic:
+The _layout.tsx file acts as a wrapper for the pages within its directory. It can contain navigation logic, such as Stack.Screen or Tabs.Screen configurations, to manage how routes within that layout are presented and navigated between.
+
+Hierarchical Layouts:
+Expo Router supports nested layouts. Each directory can have its own _layout.tsx file, allowing you to create a hierarchy of layouts where a parent layout can wrap child layouts, inheriting and extending the UI and navigation logic.
+
+Distinguishing from Regular Pages:
+The underscore clearly differentiates a layout file from a regular page file (e.g., index.tsx, profile.tsx). This helps in understanding the purpose of the file at a glance and how it relates to the overall application structure and navigation flow. 
+
+In essence, the _layout.tsx convention in Expo Router is a mechanism for building robust and organized navigation structures in your React Native applications, allowing for shared UI components and efficient management of screen flow.
