@@ -8,6 +8,7 @@ export default function Index() {
     <View style={styles.container}>
       <Text>Home page</Text>
       <Link href="/details">View details</Link>
+      <Link href={"../link_button"}>Link button</Link>
     </View>
   );
 }
